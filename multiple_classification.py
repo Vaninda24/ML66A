@@ -71,7 +71,7 @@ if(selected == 'BMI'):
         default_map)
     loan_prediction = ''
     if st.button('Predict'):
-        loan_prediction = loan_model.predict([
+        loan_prediction = bmi_model.predict([
             [
                 float(person_age),
                 gender_map[person_gender],
@@ -194,3 +194,4 @@ if(selected == 'Riding'):
 
  
     st.success(Riding_prediction)
+
