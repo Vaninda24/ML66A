@@ -54,7 +54,6 @@ default_map = {
 }
 if(selected == 'BMI'):
     st.title('BMI Classification')
-    person_age = st.text_input('person_age')
     person_gender = st.selectbox('person_gender', gender_map)
     person_education = st.selectbox('person_education', education_map)
     person_income = st.text_input('person_income') 
@@ -194,4 +193,5 @@ if(selected == 'Riding'):
 
  
     st.success(Riding_prediction)
+
 
